@@ -55,7 +55,7 @@
     padding: 4px;
     position: fixed;
     left: calc(100% - (42px + 25px));
-    top: 8px;
+    bottom: 8px;
     transition: transform .3s ease;
     z-index: 2;
 }
