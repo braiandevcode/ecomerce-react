@@ -8,7 +8,7 @@ export function CartItem({ image, title, price, quantity, addToCart }){
           <strong>{title}</strong> - {price}
         </div>
         <footer>
-          <small>Cantidad Articulos: {quantity}</small>
+          <small>Cantidad: {quantity}</small>
           <button onClick={addToCart}>+</button>
         </footer>
       </li>

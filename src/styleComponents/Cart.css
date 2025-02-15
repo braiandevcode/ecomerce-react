@@ -3,9 +3,9 @@
     display: none;
     padding: 32px;
     position: fixed;
-    right: 0px;
-    top: 0px;
+    inset: 0;
     width: 100%;
+    min-height: 100vh;
     z-index: 1;
 }
 
@@ -17,7 +17,6 @@
     width: 42px;
     height: 42px;
     border-radius: 50%;
-
 }
 
 .cart img {
@@ -55,7 +54,7 @@
     padding: 4px;
     position: fixed;
     left: calc(100% - (42px + 25px));
-    bottom: 8px;
+    bottom: 40px;
     transition: transform .3s ease;
     z-index: 2;
 }
