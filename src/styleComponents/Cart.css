@@ -1,12 +1,23 @@
 .cart {
-    background: #ddd9d9;
+    background: #222020;
     display: none;
     padding: 32px;
     position: fixed;
     right: 0px;
     top: 0px;
-    width: 400px;
+    width: 100%;
     z-index: 1;
+}
+
+.cart > button{
+    position: fixed;
+    transition: transform .3s ease;
+    top:8px;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
 }
 
 .cart img {
@@ -35,7 +46,7 @@
     align-items: center;
     background: #09f;
     color: #FFF;
-    border-radius: 9999px;
+    border-radius: 50%;
     cursor: pointer;
     display: flex;
     width: 42px;
@@ -45,15 +56,35 @@
     position: fixed;
     left: calc(100% - (42px + 25px));
     top: 8px;
-    transition: all .3s ease;
+    transition: transform .3s ease;
     z-index: 2;
 }
 
+.cart > button:hover,
 .cart-button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .cart-button~input:checked~.cart {
     height: 100%;
     display: block;
+}
+
+
+@media (min-width:720px){
+    .cart {
+        width: 60%;
+    }
+}
+
+@media (min-width:1024px){
+    .cart {
+        width: 40%;
+    }
+}
+
+@media (min-width:1200px){
+    .cart {
+        width: 30%;
+    }
 }
