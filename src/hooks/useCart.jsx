@@ -5,7 +5,7 @@ export function useCart(){
   const context = useContext(CartContext);
   
   if(context === undefined){
-    throw new Error('No puedes acceder a los datos del useContext');
+    throw new Error('No se puede usar useCart fuera del proveedor CartProvider');
   }
 
   return context;
